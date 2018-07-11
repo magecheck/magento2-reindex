@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageCheck
+ * Magento 2 Reindex In Admin
+ *
+ * @author Chiriac Victor
+ * @since 07.2018
+ * @category   MageCheck
+ * @package    MageCheck_Reindex
+ * @copyright  Copyright (c) 2017 Mage Check (http://www.magecheck.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.indexer.grid.grid.massaction">
+            <arguments>
+                <argument name="options" xsi:type="array">
+                    <item name="change_mode_admin_reindex" xsi:type="array">
+                        <item name="label" xsi:type="string" translate="true">Reindex Selected</item>
+                        <item name="url" xsi:type="string">*/indexer/reindexSelected</item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
