@@ -20,6 +20,8 @@ Installation with composer
 
     composer require magecheck/magento2-reindex
     php bin/magento setup:upgrade
+    php bin/magento setup:di:compile
+    php bin/magento setup:static-content:deploy en_US
     php bin/magento cache:flush
     php bin/magento cache:clean
 
